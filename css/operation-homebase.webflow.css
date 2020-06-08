@@ -1,5 +1,5 @@
 .body {
-  background-color: #f1f6f8;
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: Montserrat, sans-serif;
   color: #808997;
   font-size: 12px;
@@ -51,9 +51,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  max-height: 880px;
-  min-height: 680px;
+  height: auto;
+  max-height: 80px;
+  min-height: 0px;
   padding-right: 20px;
   padding-left: 20px;
   -webkit-box-orient: vertical;
@@ -127,7 +127,7 @@
   width: 100%;
   max-width: 1080px;
   padding-top: 30px;
-  padding-bottom: 130px;
+  padding-bottom: 0px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -164,9 +164,11 @@
 }
 
 .heading-wrapper {
+  display: none;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   padding-right: 40px;
+  padding-left: 400px;
 }
 
 .heading {
@@ -185,12 +187,10 @@
 }
 
 .hero-plus-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   margin-top: 20px;
+  margin-left: 181px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -815,6 +815,9 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
   box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
 }
 
@@ -832,6 +835,7 @@
   height: 390px;
   padding-top: 30px;
   background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
 }
 
 .image {
@@ -858,6 +862,7 @@
 }
 
 .card-pic {
+  display: none;
   max-height: 160px;
   max-width: 200px;
 }
@@ -881,6 +886,10 @@
   text-align: center;
 }
 
+.card-text {
+  color: #fff;
+}
+
 .card-popup {
   position: absolute;
   right: 0px;
@@ -889,9 +898,9 @@
   width: 100%;
   height: 100%;
   background-color: hsla(0, 0%, 100%, 0.98);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
@@ -921,7 +930,10 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ff9595;
+  background-color: #3ebeb3;
+  background-image: none;
+  background-position: 0px 0px;
+  background-size: auto;
 }
 
 .plus-line-white {
@@ -1111,6 +1123,7 @@
 }
 
 .bold-text-2 {
+  width: 75%;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1119,6 +1132,7 @@
 .html-embed {
   position: relative;
   z-index: -999;
+  display: block;
   overflow: hidden;
   width: 1200px;
   height: auto;
@@ -1153,7 +1167,7 @@
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-color: rgba(191, 0, 13, 0.7);
+  background-color: rgba(62, 190, 179, 0.7);
 }
 
 .d-130-right-arrow {
@@ -1198,7 +1212,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #bf000d;
+  background-color: rgba(62, 190, 179, 0.7);
   -webkit-transform: skew(25deg, 0deg);
   -ms-transform: skew(25deg, 0deg);
   transform: skew(25deg, 0deg);
@@ -1372,7 +1386,9 @@
 }
 
 .accordion-body.js-accordion-body {
+  padding-right: 10px;
   padding-bottom: 20px;
+  padding-left: 10px;
   color: #9096a4;
 }
 
@@ -1413,14 +1429,20 @@
 
 .accordion__item.js-accordion-item.active {
   position: relative;
-  left: 0%;
+  left: 15%;
+  right: 0px;
   width: 75%;
+  margin-top: 10px;
   margin-left: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   cursor: default;
 }
 
@@ -1429,8 +1451,8 @@
   margin-right: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-radius: 3px;
-  background-color: #ff9595;
+  border-radius: 8px;
+  background-color: #3ebeb3;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   font-family: Lato, sans-serif;
@@ -1443,6 +1465,2103 @@
 
 .accordion_item-image {
   width: 40px;
+}
+
+.paragraph-2 {
+  margin-right: 25px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #445567;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.faq {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  min-width: 400px;
+  padding: 20px 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1.3px solid #00d563;
+  border-radius: 10px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.faq:hover {
+  box-shadow: 0 1px 13px 0 rgba(61, 81, 105, 0.16);
+}
+
+.faq-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #00d563;
+  border-radius: 100px;
+}
+
+.faq-h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #3d5169;
+  font-size: 20px;
+}
+
+.faq-h3.noselect {
+  color: #0b1033;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.faq-content {
+  overflow: hidden;
+}
+
+.faq-question-wrap {
+  margin-bottom: 20px;
+}
+
+.column-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.column {
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.hero-2 {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.hero-image-mask {
+  width: 100%;
+  margin-left: 421px;
+}
+
+.hero-image-2 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0.5 auto;
+  -ms-flex: 0 0.5 auto;
+  flex: 0 0.5 auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  padding: 24px 30px 14px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.03);
+}
+
+.accordion-item-trigger {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.accordion-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.icon.accordion-icon {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 32px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.accordion-item-content {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.card-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/william-daigneault-1153447-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+.slide {
+  min-height: auto;
+  min-width: 100%;
+  background-image: url('../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.div-block-4 {
+  display: block;
+  overflow: visible;
+  width: 100%;
+  height: 800px;
+  padding-bottom: 0px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slider {
+  height: 600px;
+}
+
+.card-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+.card-copy3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/ashley-batz-betmVWGYcLY-unsplash.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy3.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy3.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/eye-for-ebony-j28h3uNmKCA-unsplash.jpg');
+  background-position: 75% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+  background-position: 25% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._4.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._4.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/jared-rice-NTyBbu66_SI-unsplash.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._5.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._5.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._6 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/thought-catalog-mBYvSFUCl6E-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._6.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._6.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._9 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/kelli-mcclintock-bpTLYRaU7JU-unsplash.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._9.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._9.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._100 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/united-nations-covid-19-response-pjoB_6lUbLo-unsplash.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._100.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._100.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._11 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._11.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._11.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/rahmani-kresna-lsWQ6s62k5I-unsplash.jpg');
+  background-position: 20% 50%;
+}
+
+._12 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._12.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._12.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/communication-message-chat-messaging-conversation-woman2x.png');
+}
+
+._13 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._13.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._13.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/brooke-lark-nTZOILVZuOg-unsplash.jpg');
+  background-position: 0% 50%;
+}
+
+.card-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+.card-copy-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._14 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._14.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._14.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+  background-position: 50% 100%;
+}
+
+._15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._15.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._15.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/image_2018-09-04_14-42-39.png');
+}
+
+._16 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._16.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._16.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/shane-rounce-DNkoNXQti3c-unsplash.jpg');
+}
+
+._17 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._17.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._17.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/kelli-mcclintock-QFKMeRCHb8w-unsplash.jpg');
+}
+
+._18 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._18.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._18.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/kelly-sikkema-4le7k9XVYjE-unsplash.jpg');
+  background-position: 30% 50%;
+}
+
+.slide-2 {
+  background-image: url('../images/united-nations-covid-19-response-0pWnG5AkqaQ-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.slide-3 {
+  background-image: url('../images/favourite-woman-heart-rating-fence2x.png');
+  background-position: 0px 0px;
+  background-size: 125px;
+}
+
+.slider-2 {
+  display: inline;
+}
+
+._1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/lightbulb-idea-innovation-light-woman2x.png');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/lightbulb-idea-innovation-light-woman2x.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+.card-copy-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/william-daigneault-1153447-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+.card-copy-copy-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/william-daigneault-1153447-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy-copy-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy-copy-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+._2-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/william-daigneault-1153447-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._2-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._2-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+}
+
+.card-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._3-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/jared-rice-NTyBbu66_SI-unsplash.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._3-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._3-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._4-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._4-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._4-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._5-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._5-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._5-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._6-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._6-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._6-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+.card-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._7-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/united-nations-covid-19-response-g4z85Zc-ZqI-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._7-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._7-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._8-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/thought-catalog-mBYvSFUCl6E-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._8-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._8-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._9-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._9-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._9-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._10-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/thought-catalog-mBYvSFUCl6E-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._10-1.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._10-1.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._1-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._1-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._1-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/rahmani-kresna-lsWQ6s62k5I-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/rahmani-kresna-lsWQ6s62k5I-unsplash.jpg');
+  background-position: 0px 0px, 20% 50%;
+  background-size: auto, cover;
+}
+
+._2-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._2-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._2-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/united-nations-covid-19-response-pjoB_6lUbLo-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/united-nations-covid-19-response-pjoB_6lUbLo-unsplash.jpg');
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+.card-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+.card-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+}
+
+._3-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._3-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._3-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/brooke-lark-nTZOILVZuOg-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/brooke-lark-nTZOILVZuOg-unsplash.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+._4-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._4-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._4-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
+  background-position: 50% 50%;
+}
+
+._5-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._5-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._5-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+}
+
+._6-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._6-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._6-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/eye-for-ebony-j28h3uNmKCA-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/eye-for-ebony-j28h3uNmKCA-unsplash.jpg');
+  background-position: 0px 0px, 60% 50%;
+  background-size: auto, cover;
+}
+
+._7-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._7-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._7-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/kelli-mcclintock-QFKMeRCHb8w-unsplash.jpg');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/kelli-mcclintock-QFKMeRCHb8w-unsplash.jpg');
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+}
+
+._8-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: url('../images/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+}
+
+._8-2.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._8-2.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/shane-rounce-DNkoNXQti3c-unsplash.jpg');
+}
+
+._10-1-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 390px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fbfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+  background-image: linear-gradient(180deg, transparent, #000), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+._10-1-copy.doc-card {
+  min-height: 340px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+._10-1-copy.result-card {
+  height: 390px;
+  padding-top: 30px;
+  background-color: rgba(249, 251, 252, 0.8);
+  background-image: url('../images/william-farlow-IevaZPwq0mw-unsplash.jpg');
 }
 
 @media screen and (max-width: 991px) {
@@ -1576,6 +3695,234 @@
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
+  }
+  .faq-question-wrap {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .column-wrapper {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+  }
+  .card-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy3 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._4 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._5 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._6 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._9 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._100 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._11 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._12 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._13 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._14 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._15 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._16 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._17 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._18 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy-copy-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._2-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._3-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._4-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._5-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._6-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._7-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._8-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._9-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._10-1 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._1-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._2-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._3-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._4-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._5-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._6-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._7-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._8-2 {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ._10-1-copy {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1713,6 +4060,21 @@
   }
   .section-row {
     width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
   }
   .col {
     padding-right: 20px;
@@ -1729,6 +4091,7 @@
   }
   .card.result-card {
     height: auto;
+    min-height: 360px;
     background-color: rgba(249, 251, 252, 0.66);
   }
   .card-pic {
@@ -1751,6 +4114,9 @@
     -ms-transform: none;
     transform: none;
     font-size: 12px;
+  }
+  .card-popup {
+    overflow: hidden;
   }
   .card-pic-wrapper {
     width: auto;
@@ -1846,6 +4212,730 @@
   }
   .faq-button {
     margin-right: 20px;
+  }
+  .hero-2 {
+    padding: 40px 20px;
+  }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .hero-image-mask {
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .accordion-item-content {
+    margin-right: 0px;
+  }
+  .card-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy3 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy3.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy3.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._4 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._4.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._5 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._5.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._6 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._6.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._9 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._9.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._9.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._100 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._100.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._100.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._11 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._11.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._11.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._12 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._12.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._12.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._13 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._13.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._13.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._14 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._14.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._14.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._15 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._15.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._15.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._16 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._16.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._16.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._17 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._17.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._17.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._18 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._18.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._18.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(31%, hsla(0, 0%, 100%, 0)), to(#000)), url('../images/lightbulb-idea-innovation-light-woman2x.png');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 31%, #000), url('../images/lightbulb-idea-innovation-light-woman2x.png');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy-copy-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._2-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(hsla(0, 0%, 100%, 0))), url('../images/william-daigneault-1153447-unsplash.jpg');
+    background-image: linear-gradient(180deg, #000, hsla(0, 0%, 100%, 0)), url('../images/william-daigneault-1153447-unsplash.jpg');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._2-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._3-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/jared-rice-NTyBbu66_SI-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/jared-rice-NTyBbu66_SI-unsplash.jpg');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._3-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._3-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._4-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(96%, #000)), url('../images/time-management-time-clock-chart-graph-woman2x.png');
+    background-image: linear-gradient(180deg, transparent, #000 96%), url('../images/time-management-time-clock-chart-graph-woman2x.png');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+  ._4-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._5-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._5-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._6-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+    background-position: 0px 0px, 70% 50%;
+    background-size: auto, cover;
+  }
+  ._6-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  .card-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._7-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: url('../images/united-nations-covid-19-response-g4z85Zc-ZqI-unsplash.jpg');
+  }
+  ._7-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._7-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._8-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/thought-catalog-mBYvSFUCl6E-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/thought-catalog-mBYvSFUCl6E-unsplash.jpg');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._8-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._8-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._9-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._9-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._9-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._10-1 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._10-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._10-1.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._1-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._1-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._1-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/rahmani-kresna-lsWQ6s62k5I-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/rahmani-kresna-lsWQ6s62k5I-unsplash.jpg');
+    background-position: 0px 0px, 15% 50%;
+    background-size: auto, cover;
+  }
+  ._2-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._2-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/communication-message-chat-messaging-conversation-woman2x.png');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/communication-message-chat-messaging-conversation-woman2x.png');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+  .card-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+  }
+  ._3-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._3-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._3-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/brooke-lark-nTZOILVZuOg-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/brooke-lark-nTZOILVZuOg-unsplash.jpg');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._4-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._4-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-position: 60% 50%;
+  }
+  ._5-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._5-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: url('../images/steinar-engeland-GwVmBgpP-PQ-unsplash.jpg');
+  }
+  ._6-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._6-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/dustin-belt-lg4fM9Y2pGg-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/dustin-belt-lg4fM9Y2pGg-unsplash.jpg');
+    background-position: 0px 0px, 50% 100%;
+    background-size: auto, cover;
+  }
+  ._7-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._7-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._7-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: url('../images/kelli-mcclintock-bpTLYRaU7JU-unsplash.jpg');
+    background-position: 50% 50%;
+  }
+  ._8-2 {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  ._8-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._8-2.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
+    background-image: url('../images/shane-rounce-DNkoNXQti3c-unsplash.jpg');
+  }
+  ._10-1-copy {
+    min-height: 312px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+    background-image: linear-gradient(180deg, transparent, #000), url('../images/christmas-tree-tree-decoration-reading-man2x.png');
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, cover;
+  }
+  ._10-1-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._10-1-copy.result-card {
+    height: auto;
+    min-height: 360px;
+    background-color: rgba(249, 251, 252, 0.66);
   }
 }
 
@@ -2064,5 +5154,239 @@
   }
   .accordion_item-image {
     width: 30px;
+  }
+  .paragraph-2 {
+    margin-left: 15px;
+  }
+  .faq {
+    min-width: auto;
+    padding-left: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .faq-circle {
+    margin-bottom: 9px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy3.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._9.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._100.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._11.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._12.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._13.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._14.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._15.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._16.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._17.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._18.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy-copy-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._3-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._7-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._8-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._9-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._10-1.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._1-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._2-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._3-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._4-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._5-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._6-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._7-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._8-2.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  ._10-1-copy.doc-card {
+    min-height: 280px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
